@@ -1,6 +1,17 @@
 /* This is the stylesheet for the Trivia game. */
+#pageContainer{
+    background-color: #8FD8D2;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
+}
+
 .quizElement{
+    color: #1A2930;
     display: none;
+    font-size: 25px;
 }
 
 .resultScreen{
@@ -12,8 +23,27 @@
     padding: 25px;
 }
 
+#startTitle{
+    color: #DF744A;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
 #begin:hover{
+    text-align: center;
     cursor: pointer;
-    background-color: blue;
-    color: white;
+    background-color: #DF744A;
+    color: #8FD8D2;
+}
+
+.rules{
+    color: #DF744A;
+    font-size: 60px;
+}
+
+.resultScreen{
+    color: #1A2930;
+    font-size: 40px;
+    text-align: center;
 }
