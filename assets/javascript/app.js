@@ -12,11 +12,7 @@ var timeLeft = TIME_LEFT;
 var timer;
 
 // Functions
-
-// To do: Create a timer
-
 // This function will hide the start screen and show the trivia game and start the timer.
-// To do: add timer start
 function startGame() {
   correct = 0;
   incorrect = 0;
@@ -30,7 +26,7 @@ function startGame() {
   $(".resultScreen").css("display", "none");
   $(".quizElement").css("display", "inline-block");
 }
-
+// The timer function that will check if there is any time left if there is it continues, if not it will display results
 function tick() {
   timeLeft--;
   if (timeLeft === 0) {
@@ -39,7 +35,7 @@ function tick() {
     $("#timer").text(timeLeft);
   }
 }
-
+// Finds out what is right, wrong and unanswered, Display the results on the screen and it clears the interval of the timer.
 function results() {
   $(".quizElement").css("display", "none");
   $(".resultScreen").css("display", "inline-block");
@@ -76,13 +72,11 @@ $("#begin").on("click", function(e) {
   startGame();
 });
 
-// To do: Make an if statement to detect Correct/Incorrect/Unanswered results when the "Submit" button is clicked.
-
-// To do: Display the results on a different screen after submitting the quiz.
+// makes the submit button take you to the results page on click
 $("#submitButton").on("click", function(showResults) {
   results();
 });
-// "Start Over" button restarts the game.
+// "Start Over" button restarts the game by running the startGame function
 $("#restart").on("click", function(restartGame) {
   startGame();
 });
