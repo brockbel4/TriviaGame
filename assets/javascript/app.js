@@ -2,7 +2,7 @@
 // Declaring global variables
 // Constant variables
 var TOTAL_QUESTIONS = 5;
-var TIME_LEFT = 10;
+var TIME_LEFT = 60;
 // Variables that will change
 var correct = 0;
 var incorrect = 0;
